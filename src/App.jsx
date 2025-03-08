@@ -17,7 +17,7 @@ function App() {
   }
 
   function wordCount() {
-    return text.trim().length > 0 ? text.trim().split(/\s+/).length : 0;
+    return text.trim().length > 0 ? text.trim().split(" ").length : 0;
   }
 
   return (
