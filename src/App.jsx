@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
 
 function App() {
   const [text, setText] = useState("");
@@ -31,14 +31,27 @@ function App() {
           className="input-box"
         />
         <div className="button-group">
-          <button onClick={toUpper} className="btn btn-blue">Uppercase</button>
-          <button onClick={toLower} className="btn btn-green">Lowercase</button>
-          <button onClick={clearText} className="btn btn-red">Clear</button>
+          <button onClick={toUpper} className="btn btn-blue">
+            Uppercase
+          </button>
+          <button onClick={toLower} className="btn btn-green">
+            Lowercase
+          </button>
+          <button onClick={clearText} className="btn btn-red">
+            Clear
+          </button>
         </div>
         <div className="preview-section">
-          <p><strong>Character Count:</strong> {text.length > 0 ? text.length : 0}</p>
-          <p><strong>Word Count:</strong> {wordCount()}</p>
-          <p className="preview-text"><span>Preview:</span> {text || "Your text will appear here..."}</p>
+          <p>
+            <strong>Character Count:</strong>{" "}
+            {text.length > 0 ? text.length : 0}
+          </p>
+          <p>
+            <strong>Word Count:</strong> {wordCount()}
+          </p>
+          <p className="preview-text">
+            <span>Preview:</span> {text || "Your text will appear here..."}
+          </p>
         </div>
       </div>
     </div>
